@@ -1,4 +1,4 @@
-#include "1001.h"
+#include "1001.cpp"
 #include<string>
 #include<cstring>
 int main() {
