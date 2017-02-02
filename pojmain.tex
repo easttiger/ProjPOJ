@@ -1,0 +1,37 @@
+\documentclass{article}
+% includes
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{amsthm}
+\usepackage{amsbsy}
+\usepackage{amstext}
+\usepackage{amssymb}
+\numberwithin{equation}{subsection}
+\usepackage{graphicx}
+
+
+%title , author, and abstract
+\title{Machine Solutions to POJ}
+\author{Dong, Fanghu Joseph}
+\begin{document}
+\maketitle
+\abstract{
+	To induce creating solutions to the AI problem, I attempt the solving POJ problems by machine. 
+}
+\section{Normalization, Definition, Analogy, Deduction, Exploration}
+	It suffices to solve 1 or 2 problems and hopefully the method will generalize to similar problems. This leads to the notion of problem clusters for which a latent low dimensional vector of features is assumed to exist for their classification.
+	
+	First is to understand a problem statement. Normalize the meanings and their relations into analytic forms and relate the forms to instances in the example repository. I don't believe human can discontinuously create a solution to new problem because all logical deductions must not jump. Human either decide the current problem translates to existing problem for which the solution is known then translate it back, or grows a logical reasoning chain step by step from the conditions given in the statement to the solution of the problem. In the latter case the increment is again made from searching for similar small fragmental empirical examples with uncertainty or a dictionary of relational properties acquired or distilled with certainty. The empirical acquisitions is done by a process of exploration, which can be done by the machine too.
+	
+	This suggests an index of nodes assembled in a directional graph with each edge carrying weight proportional to the uncertainty or inversely proportional to the certainty. There should also be meta graphs between subsets of nodes. The normal form is a further abstraction on the index level.
+	
+	Each edge in the graph can be a tiny neural net. Now we are talking about a graph of neural nets.
+	
+	Snow is white, not red. How can a machine evaluate this statement? The notion of snow is connected either to a definition which is a collection of deductions without noise or connected to a number of images with noise. The image of snow then have a strong connection to the concept ``white", but not ``red". This is the machine way of saying the statement is true. The initial labeling of the region on the image as white needs to be acquired say from a while convolutional unit. 
+	
+	Of course, for the color recognition problem, machine doesn't need to use data. The RGB sensors already provide functional map to all spectrum of colors. For machine, the color recognition is a known function's evaluation. The machine does need to know snow from data as we don't have a functional defintion of snow. We do have dictionary definition of snow, which basically uses hypothesis testing approach: test the color is white, the material is tiny and soft, the ambient is probably associated with cold.
+	
+	Sythesis of the above: big data is only required when the uncertainty of the concept is strong and we say the concept is defined by big data. For those mathemacial or dictionary terms, only small or even no data is required.
+\end{document}
